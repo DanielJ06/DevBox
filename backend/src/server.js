@@ -34,4 +34,4 @@ mongoose.connect('mongodb+srv://daniel:devbox@cluster0-rsnzv.mongodb.net/DevBox?
 const routes = require('./routes')
 app.use(routes)
 
-server.listen(3333, () => console.log("Running on 3333"))
+server.listen(process.env.PORT || 3333)
