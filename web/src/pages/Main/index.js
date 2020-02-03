@@ -25,6 +25,7 @@ export default class Main extends Component {
   render() {
     return (
         <div id="main-container">
+            <h3><a href="/box">Suas boxes</a></h3>
             <form onSubmit={this.handleSubmit}>
                 <input 
                   placeholder="Criar um diretório" 

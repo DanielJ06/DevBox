@@ -20,13 +20,14 @@ export default function Boxes() {
 
   return (
       <div id="box-container">
+        <h3><a href="/">Adicionar box</a></h3>
         <ul>
             {
               boxes.map(box => (
                   <li key={box._id}>
                     <strong>{box.title}</strong>
                     <a href={`box/${box._id}/files`}>
-                      <MdMoveToInbox size={32} color="#a5cfff" />
+                      <MdMoveToInbox size={32} color="#333" />
                     </a>
                   </li>
               ))
